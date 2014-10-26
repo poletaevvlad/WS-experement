@@ -1,0 +1,52 @@
+{
+	"name": "Infinity",
+	"width": 100,
+	"height": 40,
+	"data": " M 20 0 A 20 20 0 0 0 20 40 Q 30 40 50 20 T 80 0 A 20 20 0 0 1 80 40 Q 70 40 50 20 T 20 0",
+	"startPoint": {
+		"x": 80,
+		"y": 40
+	},
+	"runPoints": [
+		{
+			"x": 50,
+			"y": 20,
+			"displayPosition": "top"
+		},
+		{
+			"x": 20,
+			"y": 0,
+			"displayPosition": "top"
+		},
+		{
+			"x": 0,
+			"y": 20,
+			"displayPosition": "left"
+		},
+		{
+			"x": 20,
+			"y": 40,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 50,
+			"y": 20,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 80,
+			"y": 0,
+			"displayPosition": "top"
+		},
+		{
+			"x": 100,
+			"y": 20,
+			"displayPosition": "right"
+		},
+		{
+			"x": 80,
+			"y": 40,
+			"displayPosition": "bottom"
+		}
+	]
+}

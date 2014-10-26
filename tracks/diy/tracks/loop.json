@@ -1,0 +1,57 @@
+{
+	"name": "A loop",
+	"width": 70,
+	"height": 50,
+	"data": " M 50 10 V 35 A 5  5  0 1 0 55 30 H 25 A 15 10 0 0 1 10 20 A 10 10 0 0 1 30 20 A 15 10 0 0 1 15 30 H 10 A 10 10 0 0 0 10 50 H 60 A 10 10 0 0 0 70 40 V 10 A 10 10 0 0 0 50 10",
+	"startPoint": {
+		"x": 35,
+		"y": 50
+	},
+	"runPoints": [
+		{
+			"x": 70,
+			"y": 25,
+			"displayPosition": "right"
+		},
+		{
+			"x": 60,
+			"y": 0,
+			"displayPosition": "top"
+		},
+		{
+			"x": 50,
+			"y": 20,
+			"displayPosition": "left"
+		},
+		{
+			"x": 55,
+			"y": 40,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 60,
+			"y": 35,
+			"displayPosition": "right"
+		},
+		{
+			"x": 10,
+			"y": 20,
+			"displayPosition": "left"
+		},
+		{
+			"x": 30,
+			"y": 20,
+			"displayPosition": "right"
+		},
+		{
+			"x": 0,
+			"y": 40,
+			"displayPosition": "left"
+		},
+		{
+			"x": 35,
+			"y": 50,
+			"displayPosition": "bottom"
+		}
+	]
+}

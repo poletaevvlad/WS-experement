@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd $OPENSHIFT_DATA_DIR
+
+virtualenv $OPENSHIFT_DATA_DIR/virtualenv --distribute
+source $OPENSHIFT_DATA_DIR/virtualenv/bin/activate
+
+pip install gevent
+pip install gevent-websocket
+
+deactivate

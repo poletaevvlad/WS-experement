@@ -1,0 +1,47 @@
+{
+	"name": "Choose a path",
+	"width": 70,
+	"height": 80,
+	"data": " M 30 0 H 60 A 10 10 0 0 1 60 20 H 10 A 10 10 0 0 0 10 40 H 60 A 10 10 0 0 1 60 60 H 10 A 10 10 0 1 0 20 70 V 60 A 10 10 0 0 1 30 50 A 10 10 0 0 0 30 30 A 10 10 0 0 1 20 20 V 10 A 10 10 0 0 1 30 0",
+	"startPoint":{
+		"x": 45,
+		"y": 0
+	},
+	"runPoints": [
+		{
+			"x": 45,
+			"y": 20,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 30,
+			"y": 30,
+			"displayPosition": "top"
+		},
+		{
+			"x": 0,
+			"y": 30,
+			"displayPosition": "left"
+		},
+		{
+			"x": 70,
+			"y": 50,
+			"displayPosition": "right"
+		},
+		{
+			"x": 0,
+			"y": 70,
+			"displayPosition": "right"
+		},
+		{
+			"x": 30,
+			"y": 50,
+			"displayPosition": "top"
+		},
+		{
+			"x": 45,
+			"y": 0,
+			"displayPosition": "top"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+   "name": "Basics 1",
+   "width": 60,
+   "height": 40,
+   "data": "M 0 20 A 30 20 0 1 0 60 20 A 30 20 0 1 0 0  20",
+   "startPoint": {
+   	"x": 0,
+   	"y": 20
+   },
+   "runPoints": [
+	   {
+	   	"x": 30,
+	   	"y": 0,
+	   	"displayPosition": "top"
+	   },
+	   {
+	   	"x": 60,
+	   	"y": 20,
+	   	"displayPosition": "right"
+	   },
+	   {
+	   	"x": 30,
+	   	"y": 40,
+	   	"displayPosition": "bottom"
+	   },
+	   {
+	   	"x": 0,
+	   	"y": 20,
+	   	"displayPosition": "left"
+	   }
+	]
+}

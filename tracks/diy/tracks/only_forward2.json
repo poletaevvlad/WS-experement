@@ -1,0 +1,72 @@
+{
+	"name": "Only forward 2",
+	"width": 90,
+	"height": 60,
+	"data": "M 50 0 H 40 A 10 10 0 0 0 30 10 A 10 10 0 0 1 20 20 H 10 A 10 10 0 0 0 10 40 H 20 A 10 10 0 0 1 30 50 A 10 10 0 0 0 40 60 H 60 A 10 10 0 0 0 70 50 V 40 A 10 10 0 0 1 80 30 A 10 10 0 1 0 70 20 A 10 10 0 0 1 60 30 A 10 5 0 0 0 50 35 A 5 5 0 0 1 40 35 V 30 A 10 10 0 0 1 50 20 A 10 10 0 0 0 60 10 A 10 10 0 0 0 50 0",
+	"startPoint": {
+		"x": 45,
+		"y": 0
+	},
+	"runPoints": [
+		{
+			"x": 60,
+			"y": 10,
+			"displayPosition": "right"
+		},
+		{
+			"x": 50,
+			"y": 20,
+			"displayPosition": "top"
+		},
+		{
+			"x": 45,
+			"y": 40,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 60,
+			"y": 30,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 80,
+			"y": 10,
+			"displayPosition": "top"
+		},
+		{
+			"x": 80,
+			"y": 30,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 70,
+			"y": 50,
+			"displayPosition": "right"
+		},
+		{
+			"x": 50,
+			"y": 60,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 30,
+			"y": 50,
+			"displayPosition": "left"
+		},
+		{
+			"x": 0,
+			"y": 30,
+			"displayPosition": "left"
+		},
+		{
+			"x": 15,
+			"y": 20,
+			"displayPosition": "top"
+		},
+		{
+			"x": 45,
+			"y": 0,
+			"displayPosition": "top"
+		}
+	]
+}

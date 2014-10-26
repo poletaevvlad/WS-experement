@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cars — controller</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<script type="text/javascript" src="/js/paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/controller.css">
+	<script type="text/javascript" src="js/websockets.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/paperscript" src="js/ui.js" canvas="canvas"></script>
+</head>
+<body>
+
+<div id="steps">
+	<div class="step" id="step1">
+		<div id="st1_title">Welcome</div>
+		<div id="st1_description">Enter the code you see on your computer screen to connect</div>
+
+		<div id="st1_form">
+			<div id="st1_input">
+				<input type="text" placeholder="CODE" id="st1_textin">
+			</div>
+
+			<div id="st1_submit">Ok</div>
+		</div>
+	</div>
+</div>
+
+<canvas resize id="canvas"></canvas>
+
+<div id="loading_screen">
+	<div id="loading_text">
+		Loading<span class="status_dot1">.</span><span class="status_dot2">.</span><span class="status_dot3">.</span>
+	</div>
+</div>
+
+<div class="alert" id="alert_disconnected">
+	<div class="alert_title alert_warning">The connection to the server has been terminated.</div>
+	<article>
+		<p>The connection to the server has been terminated. Check your Internet connection and refresh the page.</p>
+		<p>If this problem accures frequently, please, <a href="http://github.com/poletaevvlad">contact the developer</a></p>
+	</article>
+</div>
+
+<div class="alert" id="alert_display_disconnected">
+	<div class="alert_title alert_warning">Your compter has been disconnected.</div>
+	<article>
+		<p>Your computer has been disconnected. Check your Internet connection and refresh the page on both your computer and this phone.</p>
+		
+	</article>
+</div>
+
+</body>
+</html>

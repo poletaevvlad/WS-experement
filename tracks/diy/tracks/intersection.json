@@ -1,0 +1,63 @@
+{
+	"name": "Intersection",
+	"width": 140,
+	"height": 100,
+	"data": " M 0 60 A 20 20 0 0 1 20 40 A 10 10 0 0 1 30 50 A 10 10 0 0 0 50 50 A 10 10 0 0 1 70 50 A 10 10 0 0 0 90 50 A 10 10 0 0 1 110 50 A 10 10 0 0 0 120 60 A 20 20 0 0 0 140 40 A 20 40 0 0 0 120 0 Q 90 0 70 50 T 20 100 A 20 40 0 0 1 0  60",
+	"startPoint": {
+		"x": 70,
+		"y": 50
+	},
+	"runPoints": [
+		{
+			"x": 120,
+			"y": 0,
+			"displayPosition": "top"
+		},
+		{
+			"x": 140,
+			"y": 40,
+			"displayPosition": "right"
+		},
+		{
+			"x": 120,
+			"y": 60,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 100,
+			"y": 40,
+			"displayPosition": "top"
+		},
+		{
+			"x": 70,
+			"y": 50,
+			"displayPosition": "right"
+		},
+		{
+			"x": 20,
+			"y": 100,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 0,
+			"y": 60,
+			"displayPosition": "left"
+		},
+		{
+			"x": 20,
+			"y": 40,
+			"displayPosition": "top"
+		},
+		{
+			"x": 40,
+			"y": 60,
+			"displayPosition": "bottom"
+		},
+		{
+			"x": 70,
+			"y": 50,
+			"displayPosition": "left"
+		}
+	]
+}
+
