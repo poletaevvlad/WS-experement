@@ -23,6 +23,6 @@ Websockets – эксперемент
 
 Выше я заикнулся про акселерометр. Но управление акселерометром слабо работает при виде от третьего лица, а вид от первого лица сложно совместить с двухмерной графикой, реализация трехмерного игрового мира в рамках данной задачи не оправдана (не потому что я ничего не знаю про WebGL). 
 
-Итак, сказано – сделано. Рабочий вариант вы можете увидеть по адресу [tracks-poletaevvlad.rhcloud.com](http://tracks-poletaevvlad.rhcloud.com/) для компьютеров, и [bit.ly/ws_controller](http://bit.ly/ws_controller) для мобильных устройств.
+Итак, сказано – сделано. Рабочий вариант вы можете увидеть по адресу [https://wstracks.herokuapp.com/](https://wstracks.herokuapp.com/) для компьютеров, и [https://wstracks.herokuapp.com/controller](https://wstracks.herokuapp.com/controller) для мобильных устройств.
 
 Работа программы протестирована в Chrome, Firefox, Safari на компьютере и Webkit (iOS 8.1) и Blink (Android 4.4.4, Chrome 38).
