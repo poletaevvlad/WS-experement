@@ -3,7 +3,7 @@ var Socket = function(){
     
     this.connectedOnce = false;
 
-    this.wsAddress = "ws://" + location.host + "/server";
+    this.wsAddress = "wss://" + location.host + "/server";
     this.ws = new WebSocket(this.wsAddress);
     this.code = "     ";
     this.role = "display";

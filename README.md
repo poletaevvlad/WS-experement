@@ -25,4 +25,4 @@ Websockets – эксперемент
 
 Итак, сказано – сделано. Рабочий вариант вы можете увидеть по адресу [tracks-poletaevvlad.rhcloud.com](http://tracks-poletaevvlad.rhcloud.com/) для компьютеров, и [bit.ly/ws_controller](http://bit.ly/ws_controller) для мобильных устройств.
 
-Работа программы протестирована в Chrome, Firefox, Safari на компьютере и Webkit (iOS 8.1) и Blink (Android 4.4.4, Chrome 38). Запущено онлайн средствами Red Hat'овского облака [OpenShift](https://www.openshift.com/). 
+Работа программы протестирована в Chrome, Firefox, Safari на компьютере и Webkit (iOS 8.1) и Blink (Android 4.4.4, Chrome 38).

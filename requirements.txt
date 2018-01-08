@@ -1,0 +1,4 @@
+gevent==1.2.2
+gevent-websocket==0.10.1
+greenlet==0.4.12
+whitenoise==3.3.1
