@@ -3,7 +3,7 @@ var Socket = function(){
 	
 	this.connectedOnce = false;
 
-	this.wsAddress = "ws://ws-poletaevvlad.rhcloud.com:8000/";
+	this.wsAddress = "ws://192.168.1.151:8080/";
 	this.ws = new WebSocket(this.wsAddress);
 	this.code = "     ";
 	this.role = "display";
