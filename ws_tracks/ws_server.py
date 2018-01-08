@@ -1,5 +1,6 @@
 import random
 import string
+import os
 from geventwebsocket import WebSocketServer, WebSocketApplication, Resource
 from whitenoise import WhiteNoise
 
@@ -85,10 +86,16 @@ class IndexWhiteNoise(WhiteNoise):
         return super(IndexWhiteNoise, self).find_file(url)
 
 
+path = os.path.dirname(__file__)
+
 resources = [
     ("/server", TracksApplication),
-    ("/", IndexWhiteNoise(application, root="static"))
+    ("/", IndexWhiteNoise(application, root=os.path.join(path, "static")))
 ]
 
 if __name__ == "__main__":
-    WebSocketServer(("0.0.0.0", 8080), Resource(resources)).serve_forever()
+    port = 8080
+    if "PORT" in os.environ:
+        port = int(os.environ["PORT"])
+    server = WebSocketServer(("", port), Resource(resources))
+    server.serve_forever()
