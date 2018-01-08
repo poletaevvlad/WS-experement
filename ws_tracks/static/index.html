@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Cars</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>websocket-tracks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="/css/display.css">
+  <link rel="stylesheet" type="text/css" href="/css/display.css">
 
-	<script type="text/javascript" src="/js/app.js"></script>
-	<script type="text/javascript" src="/js/websockets.js"></script>
-	<script type="text/javascript" src="/js/tracks.js"></script>
-	<script type="text/javascript" src="/js/paper-full.js"></script>
-	<script type="text/paperscript" src="/js/display.js" canvas="canvas"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+  <script type="text/javascript" src="/js/websockets.js"></script>
+  <script type="text/javascript" src="/js/tracks.js"></script>
+  <script type="text/javascript" src="/js/paper-full.js"></script>
+  <script type="text/paperscript" src="/js/display.js" canvas="canvas"></script>
 </head>
 
 <body onload="app.init();">
@@ -19,114 +19,114 @@
 <canvas id="canvas" resize></canvas>
 
 <div id="main_menu">
-	<div class="mm_step" id="mm_step1">
+  <div class="mm_step" id="mm_step1">
 
-		<div id="mm1_icon">
-			<svg width="220" height="100">
-				<path d="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" fill="none" stroke="#68B074" stroke-width="20"></path>
-				<path d="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" fill="none" stroke="#607D65" stroke-width="14"></path>
-				<path d="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" fill="none" stroke="#B6D3BB" stroke-width="1.5" stroke-dasharray="15, 10"></path>
-				<circle cx="0" cy="0" r="5" fill="#FFF" stroke-width="4" stroke="rgba(131, 179, 135, .5)">
-					<animateMotion path="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" begin="0s" dur="2s" repeatCount="indefinite" rotate="auto" />
-				</circle>
-			</svg>
-		</div>
+    <div id="mm1_icon">
+      <svg width="220" height="100">
+        <path d="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" fill="none" stroke="#68B074" stroke-width="20"></path>
+        <path d="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" fill="none" stroke="#607D65" stroke-width="14"></path>
+        <path d="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" fill="none" stroke="#B6D3BB" stroke-width="1.5" stroke-dasharray="15, 10"></path>
+        <circle cx="0" cy="0" r="5" fill="#FFF" stroke-width="4" stroke="rgba(131, 179, 135, .5)">
+          <animateMotion path="M 50 10 A 40 40 0 0 0 50 90  Q 70 90 110 50 T 170 10 A 40 40 0 0 1 170 90 Q 150 90 110 50 T 50 10" begin="0s" dur="2s" repeatCount="indefinite" rotate="auto" />
+        </circle>
+      </svg>
+    </div>
 
-		<div id="mm1_connect">
-			Take your smartphone, open the browser and go to <i>bit.ly/ws_controller</i>. Enter the code below.
-		</div>
-		<div id="mm1_code" class="connection_code">wait...</div>
-		<div id="mm1_status">
-			Waiting for connection<span class="status_dot1">.</span><span class="status_dot2">.</span><span class="status_dot3">.</span>
-		</div>
-	</div>
+    <div id="mm1_connect">
+      Take your smartphone, open the browser and go to <i>bit.ly/ws_controller</i>. Enter the code below.
+    </div>
+    <div id="mm1_code" class="connection_code">wait...</div>
+    <div id="mm1_status">
+      Waiting for connection<span class="status_dot1">.</span><span class="status_dot2">.</span><span class="status_dot3">.</span>
+    </div>
+  </div>
 
-	<div class="mm_step" id="mm_step2">
-		<div id="mm2_title">Choose a track.</div>
-		<div id="mm2_tracks">
-			<div id="mm2_tracks_list">
-				
-			</div>
-		</div>
-	</div>
+  <div class="mm_step" id="mm_step2">
+    <div id="mm2_title">Choose a track.</div>
+    <div id="mm2_tracks">
+      <div id="mm2_tracks_list">
+        
+      </div>
+    </div>
+  </div>
 
-	<div class="mm_step" id="mm_step3">
-	</div>
+  <div class="mm_step" id="mm_step3">
+  </div>
 
-	<div id="about_button">About</div>
+  <div id="about_button">About</div>
 </div>
 
 <div class="alert_box" id="alert_about">
-	<div class="alert_title alert_info">About</div>
+  <div class="alert_title alert_info">About</div>
 
-	<div class="alert_columns">
-		<article class="alert_text alert_column">
-			<h3>About this project</h3>
-			<p>This web application is my experement, an attempt to use a smartphone as a game controller, that adjusts itself for the game’s needs.</p>
-			<p>To connect your computer and your phone I used a relatively new technology called WebSockets – a protocol that allows both HTTP server and user’s browser to send messages to each other during one connection.</p>
-			<img src="http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-graphics-performance-semantics-storage.png" width="293" height="64">
-		</article>
+  <div class="alert_columns">
+    <article class="alert_text alert_column">
+      <h3>About this project</h3>
+      <p>This web application is my experement, an attempt to use a smartphone as a game controller, that adjusts itself for the game’s needs.</p>
+      <p>To connect your computer and your phone I used a relatively new technology called WebSockets – a protocol that allows both HTTP server and user’s browser to send messages to each other during one connection.</p>
+      <img src="http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-graphics-performance-semantics-storage.png" width="293" height="64">
+    </article>
 
-		<article class="alert_text alert_column">
-			<h3>About me</h3>
-			<div class="author_box">
-				<div class="author_photo" id="twitter_photo"></div>
-				<div class="author_link_type">
-					Twitter:
-				</div>
-				<div class="author_link">
-					<a href="http://twitter.com/PoletaevVlad">@PoletaevVlad</a>
-				</div>
-			</div>
-			<div class="author_box">
-				<div class="author_photo" id="github_photo"></div>
-				<div class="author_link_type">
-					Github:
-				</div>
-				<div class="author_link">
-					<a href="http://github.com/PoletaevVlad">Poletaev Vlad</a>
-				</div>
-			</div>
-		</article>
-	</div>
+    <article class="alert_text alert_column">
+      <h3>About me</h3>
+      <div class="author_box">
+        <div class="author_photo" id="twitter_photo"></div>
+        <div class="author_link_type">
+          Twitter:
+        </div>
+        <div class="author_link">
+          <a href="http://twitter.com/PoletaevVlad">@PoletaevVlad</a>
+        </div>
+      </div>
+      <div class="author_box">
+        <div class="author_photo" id="github_photo"></div>
+        <div class="author_link_type">
+          Github:
+        </div>
+        <div class="author_link">
+          <a href="http://github.com/PoletaevVlad">Poletaev Vlad</a>
+        </div>
+      </div>
+    </article>
+  </div>
 
-	<div class="alert_close">Close</div>
+  <div class="alert_close">Close</div>
 </div>
 
 <div class="alert_box" id="alert_completed">
-	<div class="alert_title alert_success">You have completed the track</div>
+  <div class="alert_title alert_success">You have completed the track</div>
 
-	<div class="results">
-		<div class="result_line">
-			<div class="result_cathegory">time</div>
-			<div class="result_value" id="result_time">00:00.00</div>
-		</div>
-		<div class="result_line">
-			<div class="result_cathegory">spent on the road</div>
-			<div class="result_value" id="result_onroad">25%</div>
-		</div>
-	</div>
+  <div class="results">
+    <div class="result_line">
+      <div class="result_cathegory">time</div>
+      <div class="result_value" id="result_time">00:00.00</div>
+    </div>
+    <div class="result_line">
+      <div class="result_cathegory">spent on the road</div>
+      <div class="result_value" id="result_onroad">25%</div>
+    </div>
+  </div>
 
-	<div class="alert_tip">Press the button on your phone</div>
+  <div class="alert_tip">Press the button on your phone</div>
 </div>
 
 <div class="alert_box" id="alert_controller_disconnected">
-	<div class="alert_title alert_warning">Your game controller <br /> has been disconnected</div>
+  <div class="alert_title alert_warning">Your game controller <br /> has been disconnected</div>
 
-	<article class="alert_text">
-		<p>Connection to your phone has been terminated. Check your Internet connection and update the webpage on your phone. Enter the code below.<p>
-		<p class="connection_code">wait...</p>
-		<p>If it did not solve the problem try to refresh this page. In this case your progress on this track will be lost.</p>
-		<p>If this problem accurres frequently, please, <a href="http://github.com/poletaevvlad">contact the developer.</a></p>
-	</article>
+  <article class="alert_text">
+    <p>Connection to your phone has been terminated. Check your Internet connection and update the webpage on your phone. Enter the code below.<p>
+    <p class="connection_code">wait...</p>
+    <p>If it did not solve the problem try to refresh this page. In this case your progress on this track will be lost.</p>
+    <p>If this problem accurres frequently, please, <a href="http://github.com/poletaevvlad">contact the developer.</a></p>
+  </article>
 </div>
 
 <div class="alert_box" id="alert_disconnected">
-	<div class="alert_title alert_warning">Your computer has been disconnected</div>
-	<article class="alert_text">
-		<p>The connection to the server has been terminated. Check your Internet connection and refresh the page.</p>
-		<p>If this problem accures frequently, please, <a href="http://github.com/poletaevvlad">contact the developer</a></p>
-	</article>
+  <div class="alert_title alert_warning">Your computer has been disconnected</div>
+  <article class="alert_text">
+    <p>The connection to the server has been terminated. Check your Internet connection and refresh the page.</p>
+    <p>If this problem accures frequently, please, <a href="http://github.com/poletaevvlad">contact the developer</a></p>
+  </article>
 </div>
 
 </body>
